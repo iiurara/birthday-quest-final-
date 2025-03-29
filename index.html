@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Grand Birthday Quest</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
+        
+        body {
+            background: url('https://images.unsplash.com/photo-1520523839897-bd0b52d82aa3') no-repeat center center fixed;
+            background-size: cover;
+            color: #f4e6c1;
+            font-family: 'Cinzel', serif;
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 3em;
+            text-shadow: 3px 3px 5px rgba(0,0,0,0.7);
+        }
+        .scroll {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border: 3px solid gold;
+            border-radius: 15px;
+            display: inline-block;
+            margin-top: 20px;
+            width: 80%;
+            max-width: 600px;
+        }
+        .glow-text {
+            text-shadow: 0 0 10px gold, 0 0 20px gold;
+            font-size: 1.5em;
+        }
+        .button {
+            background: linear-gradient(to right, #3c3b6e, #b8860b);
+            color: white;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .button:hover {
+            background: linear-gradient(to right, #b8860b, #3c3b6e);
+        }
+        #hidden-message {
+            display: none;
+            margin-top: 20px;
+            font-size: 1.2em;
+            color: gold;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="glow-text">📜 The Grand Birthday Quest – Official Summons 📜</h1>
+    <div class="scroll">
+        <p><em>By Royal Command of Her Highness, Princess Dooda of the Doodstar Kingdom</em></p>
+        <p><strong>To the valiant Sir Khalid,</strong></p>
+        <p>At the stroke of midnight, a most fateful event has come to pass—the dawn of your <strong>21st year</strong>.  
+        With this great milestone, destiny calls upon thee to embark on a journey of courage, wisdom, and patience.  
+        But heed this warning, noble knight—great rewards do not come without great trials. </p>
+        <p>Should thee succeed, the kingdom shall bestow upon thee:</p>
+        <ul>
+            <li>🧥 <strong>A Royal Attire</strong>, fit for a knight of your stature</li>
+            <li>⚔️ <strong>An Enchanted Artifact</strong>, forged with purpose</li>
+            <li>🍷 <strong>A Sacred Elixir</strong>, rich and indulgent</li>
+            <li>🍽️ <strong>A Grand Feast</strong>, worthy of a champion</li>
+        </ul>
+        <p>Yet, these riches are not given freely. To earn them, thee must endure the <strong>Trial of Knowledge</strong>,  
+        the <strong>Trial of Strength</strong>, the <strong>Trial of Loyalty</strong>, and the <strong>Trial of Patience</strong>—each more daunting than the last.</p>
+        <p><strong>When shall these trials come? When shall thy rewards be granted?</strong>  
+        That remains <em>to be announced…</em></p>
+        <p>For now, prepare thyself. The first test may be upon thee sooner than thee dares to expect.</p>
+        <button class="button" onclick="showMessage()">🛡️ I Accept the Quest 🛡️</button>
+        <p id="hidden-message">"Very well, Sir Khalid. The trials shall begin in due time… Stay vigilant."</p>
+    </div>
+    <script>
+        function showMessage() {
+            document.getElementById('hidden-message').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
